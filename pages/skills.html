@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rafaela Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\style.css\style.css">
+    </head>
+    <body>
+        <header>
+            <ul>
+                <li><a href="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\index.html\index.html" class="active">Home</a></li>
+                <li><a href="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\pages\about.html">About</a></li>
+                <li><a href="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\pages\skills.html">Skills</a></li>
+                <li><a href="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\pages\contact.html">Contact</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\images\stars.png" id="stars">
+            <img src="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\images\moon.png" id="moon">
+            <img src="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\images\mountains_behind.png" id="mountains_behind">
+            <img src="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\images\mountains_front.png" id="mountains_front">
+        </section>
+        <div class="sec" id="sec">
+            <div class="inner">
+                <div class="header">
+                  <h1>My Skills</h1>
+                </div>
+                <div class="container">
+                </div>
+              </div>
+              <div class="skill-box">
+                <div class="skill-title">
+                  <div class="img">
+                    <img src="C:\Users\Rafaela\OneDrive\Documents\GitHub\SC-project\Images\html5.png">
+                  </div>
+                  <h3>HTML 5</h3>
+                </div>
+                <p>kdj dkdowi9d dwjidowa adojdojiad fyerjnfa9daw</p>
+              </div>
+            </div>
+            <div class="skill-box">
+              <div class="skill-title">
+                <div class="img">
+                  <img src="C:\Users\Rafaela\OneDrive\Documents\GitHub\SC-project\Images\css3.png">
+                </div>
+                <h3>CSS3</h3>
+              </div>
+              <p>kdj dkdowi9d dwjidowa adojdojiad fyerjnfa9daw</p>
+            </div>
+          </div>
+          <div class="skill-box">
+            <div class="skill-title">
+              <div class="img">
+                <img src="C:\Users\Rafaela\OneDrive\Documents\GitHub\SC-project\Images\javascript.png">
+              </div>
+              <h3>JavaScript</h3>
+            </div>
+            <p>kdj dkdowi9d dwjidowa adojdojiad fyerjnfa9daw</p>
+          </div>
+          </div>
+          <div class="skill-box">
+            <div class="skill-title">
+              <div class="img">
+                <img src="C:\Users\Rafaela\OneDrive\Documents\GitHub\SC-project\Images\python.jpg">
+              </div>
+              <h3>Python</h3>
+            </div>
+            <p>kdj dkdowi9d dwjidowa adojdojiad fyerjnfa9daw</p>
+          </div>
+          </div>
+        </div>
+    </body>
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let mountains_front = document.getElementById('mountains_front');
+
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+        })
+    </script>
+</html>

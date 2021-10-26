@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rafaela Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\style.css\style.css">
+    </head>
+    <body>
+        <header>
+            <ul>
+                <li><a href="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\index.html\index.html" class="active">Home</a></li>
+                <li><a href="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\pages\about.html">About</a></li>
+                <li><a href="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\pages\skills.html">Skills</a></li>
+                <li><a href="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\pages\contact.html">Contact</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\images\stars.png" id="stars">
+            <img src="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\images\moon.png" id="moon">
+            <img src="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\images\mountains_behind.png" id="mountains_behind">
+            <img src="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\images\mountains_front.png" id="mountains_front">
+        </section>
+        <div class="sec" id="sec">
+            <h2>Hi, I am Rafaela.</h2>
+            <p>PUT A PARAGRAPH Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptates animi doloribus quas, a minus recusandae, harum dolore fuga ipsum sit ullam perferendis necessitatibus dolores iure. Modi doloremque illum sequi.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt hic tenetur esse dolorum id veniam nisi ex, beatae, consequuntur corrupti molestias nihil aliquid illo quod vitae harum ducimus sit nostrum!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed rerum dolores, beatae ipsum doloremque nam id repellat laborum sit assumenda laudantium odio nesciunt consequatur optio. Dolor quis iure maiores rerum?
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem est repellat quis provident cum quas, odio debitis libero beatae rerum nulla tempore itaque quaerat ea odit voluptates! Dolorem, possimus quas?<br><br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima blanditiis amet, alias eum inventore dolorum sunt ullam quisquam consectetur cumque nemo velit non, eius aspernatur. Culpa distinctio quasi placeat modi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptates animi doloribus quas, a minus recusandae, harum dolore fuga ipsum sit ullam perferendis necessitatibus dolores iure. Modi doloremque illum sequi.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt hic tenetur esse dolorum id veniam nisi ex, beatae, consequuntur corrupti molestias nihil aliquid illo quod vitae harum ducimus sit nostrum!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed rerum dolores, beatae ipsum doloremque nam id repellat laborum sit assumenda laudantium odio nesciunt consequatur optio. Dolor quis iure maiores rerum?<br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptates animi doloribus quas, a minus recusandae, harum dolore fuga ipsum sit ullam perferendis necessitatibus dolores iure. Modi doloremque illum sequi.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt hic tenetur esse dolorum id veniam nisi ex, beatae, consequuntur corrupti molestias nihil aliquid illo quod vitae harum ducimus sit nostrum!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed rerum dolores, beatae ipsum doloremque nam id repellat laborum sit assumenda laudantium odio nesciunt consequatur optio. Dolor quis iure maiores rerum?<br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptates animi doloribus quas, a minus recusandae, harum dolore fuga ipsum sit ullam perferendis necessitatibus dolores iure. Modi doloremque illum sequi.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt hic tenetur esse dolorum id veniam nisi ex, beatae, consequuntur corrupti molestias nihil aliquid illo quod vitae harum ducimus sit nostrum!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed rerum dolores, beatae ipsum doloremque nam id repellat laborum sit assumenda laudantium odio nesciunt consequatur optio. Dolor quis iure maiores rerum?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed rerum dolores, beatae ipsum doloremque nam id repellat laborum sit assumenda laudantium odio nesciunt consequatur optio. Dolor quis iure maiores rerum?<br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptates animi doloribus quas, a minus recusandae, harum dolore fuga ipsum sit ullam perferendis necessitatibus dolores iure. Modi doloremque illum sequi.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt hic tenetur esse dolorum id veniam nisi ex, beatae, consequuntur corrupti molestias nihil aliquid illo quod vitae harum ducimus sit nostrum!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed rerum dolores, beatae ipsum doloremque nam id repellat laborum sit assumenda laudantium odio nesciunt consequatur optio. Dolor quis iure maiores rerum?
+                <br></p>
+        </div>
+    </body>
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let mountains_front = document.getElementById('mountains_front');
+
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+        })
+    </script>
+</html>

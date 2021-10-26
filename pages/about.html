@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rafaela Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\style.css\style.css">
+    </head>
+    <body>
+        <header>
+            <ul>
+                <li><a href="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\index.html\index.html" class="active">Home</a></li>
+                <li><a href="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\pages\about.html">About</a></li>
+                <li><a href="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\pages\skills.html">Skills</a></li>
+                <li><a href="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\pages\contact.html">Contact</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\images\stars.png" id="stars">
+            <img src="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\images\moon.png" id="moon">
+            <img src="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\images\mountains_behind.png" id="mountains_behind">
+            <img src="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\images\mountains_front.png" id="mountains_front">
+        </section>
+        <div class="sec" id="sec">
+            <h1 class="about-me-page-title">About Me</h1>
+      <p class="about-me">Hi, my name is Rafaela and I am a self-taught developer based around Bolton, 
+        Greater Manchester. I fell into the rabbit hole of coding widely due to the pandemic and I have not looked backed since. 
+        Apart from being a developer I am also a content creator, talking specifically about true-crime, murder mysteries and conspiracy theories.<br><br>
+        Critical thinker, problem solver and a team player. And always looking for my next challenge. Whether it's a kata
+        or building a game from scratch using Unity.<br><br> Oh, and did I mention that I have a <a href="https://tinyurl.com/YTReconnaissance">YouTube channel</a> might want to check that out :).</p>
+        <div class="slidershow middle">
+<!--I will be chaning these images but, they will stay there for the time being as place holders.-->
+          <div class="slides">
+            <input type="radio" name="r" id="r1" checked>
+            <input type="radio" name="r" id="r2">
+            <input type="radio" name="r" id="r3">
+            <div class="slide s1">
+              <img src="C:\Users\Rafaela\OneDrive\Documents\GitHub\SC-project\Images\eren.jpg" alt="image of Eren Jaeger">
+            </div>
+            <div class="slide">
+              <img src="C:\Users\Rafaela\OneDrive\Documents\GitHub\SC-project\Images\my-hero-academia-shigaraki.jpg" alt="image of Shigaraki">
+            </div>
+            <div class="slide">
+              <img src="C:\Users\Rafaela\OneDrive\Documents\GitHub\SC-project\Images\sasha.jpg" alt="image of Sasha braus">
+            </div>
+            </div>
+
+            <div class="navigation">
+              <label for="r1" class="bar"></label>
+              <label for="r2" class="bar"></label>
+              <label for="r3" class="bar"></label>
+            </div>
+          
+          </div>
+        </div>
+    </body>
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let mountains_front = document.getElementById('mountains_front');
+
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+        })
+    </script>
+</html>
