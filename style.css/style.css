@@ -80,6 +80,10 @@ section img#moon {
     mix-blend-mode: screen;
 }
 
+#text {
+    position: absolute;
+}
+
 .sec {
     position: relative;
     padding: 100px;
@@ -129,12 +133,9 @@ a {
     font-size: 3.5em;
     margin-bottom: 10px;
     color: #fff;
-    margin-top: auto;
 }
 
-.about-me {
-    margin-top: 30px; 
-}
+
 
 /* image carousel - start */
 
@@ -142,12 +143,12 @@ a {
     width: 800px;
     height: 400px;
     overflow: hidden;
+    padding-top: 20px;
 }
 
 .middle {
     top: 50%;
     left: 75%;
-    transform: translate(-50%, -50%);
 }
 
 .search {
@@ -383,6 +384,4 @@ form {
     margin-bottom: 20px;
 }
                                    
-
-
                                         /* Contacts page - end */
